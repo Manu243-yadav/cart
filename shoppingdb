@@ -1,0 +1,56 @@
+
+use shopping;
+
+INSERT INTO users (username, email, password_hash) VALUES ('shyam', 'shyam@example.com', 'hashed_password1');
+
+INSERT INTO users (username, email, password_hash) VALUES ('manu', 'manu@example.com', 'hashed_password2');
+
+INSERT INTO users (username, email, password_hash) VALUES ('ram', 'ram@example.com', 'hashed_password3');
+
+INSERT INTO users (username, email, password_hash) VALUES ('devi', 'devi@example.com', 'hashed_password4');
+
+INSERT INTO users (username, email, password_hash) VALUES ('krish', 'krish@example.com', 'hashed_password5');
+ 
+INSERT INTO products (name, description, price, stock) VALUES ('Laptop', 'A high-performance laptop', 999.99, 50);
+
+INSERT INTO products (name, description, price, stock) VALUES ('Smartphone', 'Latest model smartphone', 699.99, 150);
+
+INSERT INTO products (name, description, price, stock) VALUES ('Headphones', 'Noise-cancelling headphones', 199.99, 200);
+
+INSERT INTO products (name, description, price, stock) VALUES ('Smartwatch', 'Wearable smartwatch with health tracking', 149.99, 100);
+
+INSERT INTO products (name, description, price, stock) VALUES ('Tablet', '10-inch tablet with high resolution', 299.99, 75);
+ 
+INSERT INTO orders (user_id, order_date, total_amount) VALUES (1, '2023-05-01 10:00:00', 1999.98);
+
+INSERT INTO orders (user_id, order_date, total_amount) VALUES (2, '2023-05-02 11:30:00', 699.99);
+
+INSERT INTO orders (user_id, order_date, total_amount) VALUES (3, '2023-05-03 14:00:00', 999.95);
+
+INSERT INTO orders (user_id, order_date, total_amount) VALUES (4, '2023-05-04 16:15:00', 449.97);
+
+INSERT INTO orders (user_id, order_date, total_amount) VALUES (5, '2023-05-05 18:45:00', 1199.96);
+ 
+INSERT INTO payments (order_id, payment_method, payment_date, payment_status) VALUES (1, 'Credit Card', '2023-05-01 11:00:00', 'Completed');
+
+INSERT INTO payments (order_id, payment_method, payment_date, payment_status) VALUES (2, 'PayPal', '2023-05-02 12:00:00', 'Pending');
+
+INSERT INTO payments (order_id, payment_method, payment_date, payment_status) VALUES (3, 'Bank Transfer', '2023-05-03 15:00:00', 'Completed');
+
+INSERT INTO payments (order_id, payment_method, payment_date, payment_status) VALUES (4, 'Credit Card', '2023-05-04 17:00:00', 'Failed');
+
+INSERT INTO payments (order_id, payment_method, payment_date, payment_status) VALUES (5, 'PayPal', '2023-05-05 19:00:00', 'Completed');
+ 
+INSERT INTO carts ( user_id, product_id, quantity) VALUES ( 3, 2, 2);
+
+INSERT INTO carts ( user_id, product_id, quantity) VALUES ( 5, 4, 1);
+
+INSERT INTO carts ( user_id, product_id, quantity) VALUES ( 1, 5, 5);
+
+INSERT INTO carts ( user_id, product_id, quantity) VALUES ( 4, 1, 3);
+
+INSERT INTO carts ( user_id, product_id, quantity) VALUES ( 2, 3, 4);
+ 
+ 
+ 
+ 
